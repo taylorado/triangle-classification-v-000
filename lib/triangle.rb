@@ -11,9 +11,9 @@ class Triangle
   def valid?
    sorted = @triangle_sides.sort
    sorted[2] < sorted[0]+sorted[1]
- end
+  end
 
- def kind
+  def kind
     if valid?
       case @triangle_sides.uniq.size
       when 1 then :equilateral
@@ -29,4 +29,5 @@ end
 
 
 class TriangleError < StandardError
+
 end
