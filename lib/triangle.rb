@@ -9,9 +9,8 @@ class Triangle
   end
 
   def valid?
-   sorted_sides = @triangle_sides.sort
-   valid_lengths = @triangle_sides.all? { |side| side >= 0 }
-   valid_lengths && (sorted_sides[0] + sorted_sides[1] > sorted_sides[2])
+   sorted = @triangle_sides.sort
+   sorted.max < sorted.sum
  end
 
 
