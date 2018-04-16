@@ -5,7 +5,7 @@ class Triangle
     @a_side = a_side
     @b_side = b_side
     @c_side = c_side
-    @triangle_sides = [@Aside, @Bside, @Cside]
+    @triangle_sides = [@a_side, @b_side, @c_side]
   end
 
   def valid?
