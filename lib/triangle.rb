@@ -10,7 +10,7 @@ class Triangle
 
   def valid?
    sorted = @triangle_sides.sort
-   sorted.max < sorted.reduce :+
+   sorted[3] < sorted[1]+sorted[2]
  end
 
  def kind
